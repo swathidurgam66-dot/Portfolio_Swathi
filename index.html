@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swathi Durgam — Computer Science Engineer</title>
+<meta name="description" content="Swathi Durgam — Computer Science Engineering graduate specializing in AI, Machine Learning, RAG systems, and Computer Vision. Explore projects, skills, and experience.">
+<meta name="keywords" content="Swathi Durgam, AI Developer, Machine Learning Engineer, Python Developer, Portfolio">
+<meta property="og:title" content="Swathi Durgam — Computer Science Engineer">
+<meta property="og:description" content="AI & Machine Learning Enthusiast | Python Developer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-bracket">&lt;</span>
+    <span class="loader-text">SD</span>
+    <span class="loader-bracket">/&gt;</span>
+  </div>
+  <div class="loader-bar"><span id="loaderProgress"></span></div>
+</div>
+
+<!-- ===================== SCROLL PROGRESS BAR ===================== -->
+<div class="scroll-progress"><span id="scrollProgress"></span></div>
+
+<!-- ===================== ANIMATED BACKGROUND ===================== -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo"><span class="mono">const</span> dev <span class="accent">=</span> "SD"</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===================== HERO SECTION ===================== -->
+<header class="hero" id="home">
+  <div class="hero-container">
+    <p class="hero-eyebrow reveal-up" data-aos>
+      <span class="dot-live"></span> print("hello world, I'm")
+    </p>
+    <h1 class="hero-name reveal-up" data-aos data-aos-delay="80">Swathi Durgam</h1>
+
+    <div class="hero-terminal reveal-up" data-aos data-aos-delay="160">
+      <div class="terminal-topbar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">role.py</span>
+      </div>
+      <div class="terminal-body">
+        <span class="mono line-1">role <span class="op">=</span> <span class="str">"<span id="typedText"></span><span class="type-cursor">|</span>"</span></span>
+      </div>
+    </div>
+
+    <p class="hero-desc reveal-up" data-aos data-aos-delay="240">
+      Computer Science Engineering graduate passionate about Artificial Intelligence, Machine Learning,
+      Data Analytics, Computer Vision, and Software Development. I enjoy building innovative applications
+      that solve real-world problems using modern technologies.
+    </p>
+
+    <div class="hero-btns reveal-up" data-aos data-aos-delay="320">
+      <a href="assets/Swathi_Durgam_Resume.pdf" download class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download Resume
+      </a>
+      <a href="#projects" class="btn btn-outline">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+
+    <div class="hero-socials reveal-up" data-aos data-aos-delay="380">
+      <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.81-1.34-1.81-1.09-.77.08-.75.08-.75 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.81 1.33 3.5 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.78-5.49 6.09.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38 0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/swathi-durgam" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a href="mailto:swathidurgam66@gmail.com" aria-label="Email" class="social-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19.4 2H2.6l9.4 7.05L21.4 6ZM3 18h18V7.4l-9 6.75L3 7.4V18Z"/></svg>
+      </a>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== ABOUT SECTION ===================== -->
+<section class="section" id="about">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## about</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about-text" data-aos data-aos-delay="120">
+        <p>
+          I am a Computer Science Engineering graduate with strong programming skills in Python, Java, SQL,
+          and modern AI technologies. I have experience building intelligent applications using Machine Learning,
+          Retrieval-Augmented Generation (RAG), NLP, Computer Vision, and IoT. I am passionate about continuous
+          learning and excited to contribute to innovative software development teams.
+        </p>
+        <div class="about-counters">
+          <div class="counter-item">
+            <span class="counter" data-count="4">0</span><span class="counter-plus">+</span>
+            <p>Projects Built</p>
+          </div>
+          <div class="counter-item">
+            <span class="counter" data-count="9" data-decimal="03">0</span>
+            <p>CGPA / 10</p>
+          </div>
+          <div class="counter-item">
+            <span class="counter" data-count="3">0</span>
+            <p>Certifications</p>
+          </div>
+          <div class="counter-item">
+            <span class="counter" data-count="1">0</span>
+            <p>Published Chapter</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card glass" data-aos data-aos-delay="180">
+        <div class="about-card-row"><span class="mono label">name</span><span>Swathi Durgam</span></div>
+        <div class="about-card-row"><span class="mono label">role</span><span>CS Engineer, AI/ML</span></div>
+        <div class="about-card-row"><span class="mono label">focus</span><span>ML · RAG · CV · NLP</span></div>
+        <div class="about-card-row"><span class="mono label">degree</span><span>B.Tech CSE, 2026</span></div>
+        <div class="about-card-row"><span class="mono label">location</span><span>Telangana, India</span></div>
+        <div class="about-card-row"><span class="mono label">status</span><span class="status-open"><span class="dot-live"></span>Open to work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS SECTION ===================== -->
+<section class="section section-alt" id="skills">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## skills</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Skills &amp; Technologies</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-category glass" data-aos data-aos-delay="100">
+        <h3><span class="skill-icon">💻</span> Programming Languages</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Python</span><span class="mono skill-pct">95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Java</span><span class="mono skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>SQL</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>C++</span><span class="mono skill-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>C</span><span class="mono skill-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category glass" data-aos data-aos-delay="180">
+        <h3><span class="skill-icon">🌐</span> Web Technologies</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>HTML</span><span class="mono skill-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>CSS</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>JavaScript</span><span class="mono skill-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category glass" data-aos data-aos-delay="260">
+        <h3><span class="skill-icon">🧠</span> AI &amp; ML</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Machine Learning</span><span class="mono skill-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>NLP</span><span class="mono skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>RAG</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>FAISS</span><span class="mono skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Sentence Transformers</span><span class="mono skill-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>LLM</span><span class="mono skill-pct">82%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category glass" data-aos data-aos-delay="340">
+        <h3><span class="skill-icon">🛠️</span> Libraries &amp; Tools</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>OpenCV</span><span class="mono skill-pct">82%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MediaPipe</span><span class="mono skill-pct">78%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Git &amp; GitHub</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>VS Code</span><span class="mono skill-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category glass" data-aos data-aos-delay="420">
+        <h3><span class="skill-icon">🧩</span> Concepts</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Data Structures</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>OOP</span><span class="mono skill-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Problem Solving</span><span class="mono skill-pct">88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Computer Vision</span><span class="mono skill-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>IoT Development</span><span class="mono skill-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS SECTION ===================== -->
+<section class="section" id="projects">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## projects</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Featured Projects</h2>
+
+    <div class="filter-bar" data-aos data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="ai">AI / NLP</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <article class="project-card glass" data-category="ml" data-aos data-aos-delay="120">
+        <div class="project-image">
+          <div class="project-image-placeholder">📈</div>
+        </div>
+        <div class="project-body">
+          <h3>Crypto Market Financial Risk Analysis</h3>
+          <p>Developed an ML-based framework to analyze cryptocurrency price movements, volatility, and financial risk using historical market datasets.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Financial Analytics</span>
+            <span class="tech-tag">Data Preprocessing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" class="project-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.81-1.34-1.81-1.09-.77.08-.75.08-.75 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.81 1.33 3.5 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.78-5.49 6.09.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38 0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="project-btn project-btn-outline">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="ai" data-aos data-aos-delay="180">
+        <div class="project-image">
+          <div class="project-image-placeholder">🤖</div>
+        </div>
+        <div class="project-body">
+          <h3>Smart Retail Shopping Helpdesk Chatbot</h3>
+          <p>Developed an AI-powered chatbot using Retrieval-Augmented Generation (RAG) for intelligent retail customer support. Implemented semantic search with FAISS and Sentence Transformers for accurate responses.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Sentence Transformers</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" class="project-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.81-1.34-1.81-1.09-.77.08-.75.08-.75 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.81 1.33 3.5 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.78-5.49 6.09.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38 0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="project-btn project-btn-outline">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="iot" data-aos data-aos-delay="240">
+        <div class="project-image">
+          <div class="project-image-placeholder">🍶</div>
+        </div>
+        <div class="project-body">
+          <h3>Smart Hydration Water Bottle</h3>
+          <p>Designed and developed a portable IoT-enabled smart water bottle capable of dispensing both hot and cool water using rechargeable batteries.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">Sensors</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" class="project-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.81-1.34-1.81-1.09-.77.08-.75.08-.75 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.81 1.33 3.5 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.78-5.49 6.09.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38 0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="project-btn project-btn-outline">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass" data-category="cv" data-aos data-aos-delay="300">
+        <div class="project-image">
+          <div class="project-image-placeholder">🎚️</div>
+        </div>
+        <div class="project-body">
+          <h3>Volume Control System Using Python</h3>
+          <p>Created a gesture-controlled application that adjusts computer volume using hand movements with Computer Vision.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">MediaPipe</span>
+            <span class="tech-tag">PyAutoGUI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" class="project-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.81-1.34-1.81-1.09-.77.08-.75.08-.75 1.2.09 1.84 1.26 1.84 1.26 1.07 1.87 2.81 1.33 3.5 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.26a11.3 11.3 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.71.24 2.97.12 3.28.77.86 1.24 1.96 1.24 3.31 0 4.74-2.81 5.78-5.49 6.09.43.38.81 1.13.81 2.28 0 1.65-.02 2.98-.02 3.38 0 .33.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="project-btn project-btn-outline">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION SECTION ===================== -->
+<section class="section section-alt" id="education">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## education</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Education Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-year mono">2022 – 2026</span>
+          <h3>B.Tech in Computer Science Engineering</h3>
+          <p class="timeline-org">St. Peters Engineering College</p>
+          <p class="timeline-score">CGPA: <strong>9.03</strong></p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-year mono">2020 – 2022</span>
+          <h3>Intermediate</h3>
+          <p class="timeline-org">Sadhana Junior College</p>
+          <p class="timeline-score">Percentage: <strong>72.3%</strong></p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos data-aos-delay="300">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass">
+          <span class="timeline-year mono">2020</span>
+          <h3>SSC</h3>
+          <p class="timeline-org">Telangana Model School</p>
+          <p class="timeline-score">Percentage: <strong>98%</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS SECTION ===================== -->
+<section class="section" id="certifications">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## certifications</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card glass" data-aos data-aos-delay="100">
+        <div class="cert-icon">🏆</div>
+        <h3>National Level 36 Hours CMR Hackfest 2.0</h3>
+        <p>Participation Certificate</p>
+        <span class="cert-year mono">Feb 2025</span>
+      </div>
+
+      <div class="cert-card glass" data-aos data-aos-delay="180">
+        <div class="cert-icon">🛰️</div>
+        <h3>Overview of Global Navigation Satellite System</h3>
+        <p>ISRO</p>
+        <span class="cert-year mono">Sep 2024 – Oct 2025</span>
+      </div>
+
+      <div class="cert-card glass" data-aos data-aos-delay="260">
+        <div class="cert-icon">🗄️</div>
+        <h3>Mastering SQL with MySQL</h3>
+        <p>St. Peters Engineering College · Score: 86%</p>
+        <span class="cert-year mono">Nov – Dec 2023</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+<section class="section section-alt" id="achievements">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## achievements</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Achievements</h2>
+
+    <div class="achievement-card glass" data-aos data-aos-delay="120">
+      <div class="achievement-icon">📖</div>
+      <div>
+        <h3>Published Book Chapter &amp; Conference Presentation</h3>
+        <p>Presented research on "Volume Control System Using Python" at the ICKEAI International Conference; the work was published as a book chapter in 2024.</p>
+        <span class="achievement-year mono">2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section class="section" id="contact">
+  <div class="section-container">
+    <p class="section-eyebrow" data-aos>## contact</p>
+    <h2 class="section-title" data-aos data-aos-delay="60">Let's Connect</h2>
+    <p class="contact-intro" data-aos data-aos-delay="100">Have an opportunity, project, or just want to say hi? My inbox is always open.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:swathidurgam66@gmail.com" class="contact-card glass" data-aos data-aos-delay="140">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-label mono">email</span>
+        <span class="contact-value">swathidurgam66@gmail.com</span>
+      </a>
+      <a href="tel:+917989888705" class="contact-card glass" data-aos data-aos-delay="200">
+        <span class="contact-icon">📞</span>
+        <span class="contact-label mono">phone</span>
+        <span class="contact-value">+91 79898 88705</span>
+      </a>
+      <a href="https://linkedin.com/in/swathi-durgam" target="_blank" rel="noopener" class="contact-card glass" data-aos data-aos-delay="260">
+        <span class="contact-icon">💼</span>
+        <span class="contact-label mono">linkedin</span>
+        <span class="contact-value">/in/swathi-durgam</span>
+      </a>
+      <a href="https://github.com/SwathiDurgam" target="_blank" rel="noopener" class="contact-card glass" data-aos data-aos-delay="320">
+        <span class="contact-icon">🐙</span>
+        <span class="contact-label mono">github</span>
+        <span class="contact-value">/SwathiDurgam</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <p>© 2026 Swathi Durgam</p>
+  <p>Made with <span class="heart">❤️</span> using HTML, CSS and JavaScript.</p>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
