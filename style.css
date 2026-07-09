@@ -467,3 +467,16 @@ p{ margin: 0; color: var(--text-dim); }
 .profile-img:hover{
     transform:scale(1.05);
 }
+@media(max-width:768px){
+
+.hero-container{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.profile-img{
+    width:250px;
+    height:250px;
+}
+
+}
