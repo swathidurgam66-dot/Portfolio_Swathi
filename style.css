@@ -423,3 +423,16 @@ p{ margin: 0; color: var(--text-dim); }
   .btn{ justify-content: center; width: 100%; }
   .achievement-card{ flex-direction: column; }
 }
+.profile-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4f46e5;
+    box-shadow: 0 0 25px rgba(79, 70, 229, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
