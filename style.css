@@ -436,3 +436,34 @@ p{ margin: 0; color: var(--text-dim); }
 .profile-img:hover {
     transform: scale(1.05);
 }
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    min-height:90vh;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.profile-img{
+    width:340px;
+    height:340px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #6C63FF;
+    box-shadow:0 0 40px rgba(108,99,255,.6);
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
